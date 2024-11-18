@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Tourism Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        .hero-section {
+            position: relative;
+            height: 60vh;
+            background-image: url('https://cdn.pixabay.com/photo/2023/07/22/23/10/ai-generated-8144259_960_720.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="font-roboto bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-2xl font-bold" href="home.html">Tourism</a>
+            <div class="hidden md:flex">
+                <a class="mx-2 hover:text-blue-200" href="tour.html">Tours</a>
+                <a class="mx-2 hover:text-blue-200" href="blog.html">Blog</a>
+                <a class="mx-2 hover:text-blue-200" href="about.html">About Us</a>
+                <a class="mx-2 hover:text-blue-200" href="contact.html">Contact Us</a>
+                <a class="mx-2 hover:text-blue-200" href="car.html">Car Rentals</a>
+                <a class="mx-2 hover:text-blue-200" href="booking.html">Hotel Booking</a>
+                <a class="mx-2 hover:text-blue-200" href="flight.html">Train & Flight Booking</a>
+                <a class="mx-2 hover:text-blue-200" href="login.html">Login</a>
+            </div>
+            <button class="md:hidden">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <div class="hero-section">
+        <div class="hero-content flex items-center justify-center">
+            <div class="text-center text-white">
+                <h1 class="text-5xl font-bold mb-4">Explore the World with Us</h1>
+                <p class="text-xl mb-8">Discover amazing destinations and create unforgettable memories</p>
+                <a href="tours.html" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300">
+                    Start Your Journey
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="container mx-auto mt-8 px-4">
+        <form id="search-form" class="flex justify-center">
+            <input type="text" id="search-input" placeholder="Search destinations..." class="px-4 py-2 w-64 rounded-l-lg border-t border-b border-l text-gray-800 border-gray-200 bg-white" />
+            <button type="submit" class="px-4 py-2 rounded-r-lg bg-blue-600 text-white font-bold">Search</button>
+        </form>
+    </div>
+
+    <!-- Featured Destinations -->
+    <div class="container mx-auto mt-16 px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Featured Destinations</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://cdn-ikppcfn.nitrocdn.com/jqtVDbjdfBPrQSiPhMihAdYLibcqMkkx/assets/images/optimized/rev-4c3905d/sevennaturalwonders.org/wp-content/uploads/2023/12/Natural-wonders-of-Japan.jpg" alt="Tokyo" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Tokyo, Japan</h3>
+                    <p class="text-gray-600 mb-4">Experience the perfect blend of tradition and modernity</p>
+                    <a href="https://www.google.com/maps/search/Tokyo" target="_blank" class="text-blue-600 hover:underline">Learn More</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://images.musement.com/cover/0002/42/view-on-manhattan-at-night-new-york-city_header-141511.jpeg?w=1200&h=630&q=95&fit=crop" alt="New York" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">New York, USA</h3>
+                    <p class="text-gray-600 mb-4">Discover the city that never sleeps</p>
+                    <a href="https://www.google.com/maps/search/New+York" target="_blank" class="text-blue-600 hover:underline">Learn More</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://media.istockphoto.com/id/945092130/photo/thun-cityspace-with-alps-mountain-and-lake-in-switzerland.jpg?s=612x612&w=0&k=20&c=OV0ApBGo4w936DgRp-UejZ3HTYDWHP05b1HcQOWH7Jg=" alt="Bern" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Bern, Switzerland</h3>
+                    <p class="text-gray-600 mb-4">Explore the charming capital of Switzerland</p>
+                    <a href="https://www.google.com/maps/search/Bern" target="_blank" class="text-blue-600 hover:underline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-8 mt-16">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">About Us</h3>
+                <p>We are passionate about helping you explore the world and create unforgettable memories.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul>
+                    <li><a href="tours.html" class="hover:underline">Tours</a></li>
+                    <li><a href="blog.html" class="hover:underline">Blog</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+                    <li><a href="login.html" class="hover:underline">Login</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-2xl hover:text-blue-200"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-200"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-200"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p>© 2024 Tourism Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('search-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var searchTerm = document.getElementById('search-input').value.toLowerCase();
+            var destinations = ['tokyo', 'new york', 'bern'];
+            if (destinations.includes(searchTerm)) {
+                window.location.href = 'https://www.google.com/maps/search/' + encodeURIComponent(searchTerm);
+            } else {
+                alert('Please search for Tokyo, New York, or Bern.');
+            }
+        });
+    </script>
+</body>
+</html>

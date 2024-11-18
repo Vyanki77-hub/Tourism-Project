@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Car Rentals - Tourism Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="font-roboto bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-2xl font-bold" href="index.html">Tourism</a>
+            <div class="hidden md:flex">
+                <a class="mx-2 hover:text-blue-200" href="tour.html">Tours</a>
+                <a class="mx-2 hover:text-blue-200" href="blog.html">Blog</a>
+                <a class="mx-2 hover:text-blue-200" href="about.html">About Us</a>
+                <a class="mx-2 hover:text-blue-200" href="contact.html">Contact Us</a>
+                <a class="mx-2 hover:text-blue-200" href="car.html">Car Rentals</a>
+                <a class="mx-2 hover:text-blue-200" href="booking.html">Hotel Booking</a>
+                <a class="mx-2 hover:text-blue-200" href="flight.html">Train & Flight Booking</a>
+                <a class="mx-2 hover:text-blue-200" href="login.html">Login</a>
+            </div>
+            <button class="md:hidden">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Car Rentals Content -->
+    <div class="container mx-auto mt-16 px-4">
+        <h1 class="text-3xl font-bold mb-8 text-center">Car Rentals</h1>
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">Find Your Perfect Ride</h2>
+            <form class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <label for="pickup" class="block text-gray-700 font-bold mb-2">Pick-up Location</label>
+                    <input type="text" id="pickup" name="pickup" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                </div>
+                <div>
+                    <label for="pickup-date" class="block text-gray-700 font-bold mb-2">Pick-up Date</label>
+                    <input type="date" id="pickup-date" name="pickup-date" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                </div>
+                <div>
+                    <label for="dropoff-date" class="block text-gray-700 font-bold mb-2">Drop-off Date</label>
+                    <input type="date" id="dropoff-date" name="dropoff-date" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                </div>
+                <div class="md:col-span-3">
+                    <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Search Available Cars
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/placeholder.svg?height=200&width=300" alt="Economy Car" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Economy Car</h3>
+                    <p class="text-gray-600 mb-4">Perfect for city driving and fuel efficiency</p>
+                    <p class="text-lg font-bold mb-4">$30/day</p>
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/placeholder.svg?height=200&width=300" alt="SUV" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">SUV</h3>
+                    <p class="text-gray-600 mb-4">Spacious and comfortable for family trips</p>
+                    <p class="text-lg font-bold mb-4">$50/day</p>
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/placeholder.svg?height=200&width=300" alt="Luxury Car" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Luxury Car</h3>
+                    <p class="text-gray-600 mb-4">Travel in style with our premium options</p>
+                    <p class="text-lg font-bold mb-4">$80/day</p>
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-8 mt-16">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">About Us</h3>
+                <p>We are passionate about helping you explore the world and create unforgettable memories.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul>
+                    <li><a href="tours.html" class="hover:underline">Tours</a></li>
+                    <li><a href="blog.html" class="hover:underline">Blog</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+                    <li><a href="login.html" class="hover:underline">Login</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-2xl hover:text-blue-200"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-200"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-200"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p>© 2023 Tourism Website. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

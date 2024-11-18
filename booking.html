@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Book a Tour - Tourism Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="font-roboto bg-gray-100">
+    <!-- Navbar (same as index.html) -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <!-- ... (navbar content) ... -->
+    </nav>
+
+    <!-- Booking Form -->
+    <div class="container mx-auto mt-16 px-4">
+        <h1 class="text-3xl font-bold mb-8 text-center">Book Your Tour</h1>
+        <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="p-6">
+                <form id="bookingForm">
+                    <div class="mb-4">
+                        <label for="destination" class="block text-gray-700 font-bold mb-2">Destination</label>
+                        <select id="destination" name="destination" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                            <option value="">Select a destination</option>
+                            <option value="tokyo">Tokyo, Japan</option>
+                            <option value="new-york">New York, USA</option>
+                            <option value="ottawa">Ottawa, Canada</option>
+                            <option value="seoul">Seoul, South Korea</option>
+                            <option value="beijing">Beijing, China</option>
+                            <option value="bern">Bern, Switzerland</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="date" class="block text-gray-700 font-bold mb-2">Date</label>
+                        <input type="date" id="date" name="date" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="guests" class="block text-gray-700 font-bold mb-2">Number of Guests</label>
+                        <input type="number" id="guests" name="guests" min="1" max="10" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-4">Payment Information</h2>
+                    <div class="mb-4">
+                        <label for="cardNumber" class="block text-gray-700 font-bold mb-2">Card Number</label>
+                        <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="expDate" class="block text-gray-700 font-bold mb-2">Expiration Date</label>
+                            <input type="text" id="expDate" name="expDate" placeholder="MM/YY" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                        </div>
+                        <div>
+                            <label for="cvv" class="block text-gray-700 font-bold mb-2">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="123" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Book Now
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-blue-600 text-white p-8 mt-16">
+        <!-- ... (footer content) ... -->
+    </footer>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the form data to a server
+            alert('Booking submitted successfully!');
+        });
+    </script>
+</body>
+</html>

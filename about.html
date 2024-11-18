@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>About Us - Tourism Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="font-roboto bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-2xl font-bold" href="index.html">Tourism</a>
+            <div class="hidden md:flex">
+                <a class="mx-2 hover:text-blue-200" href="tours.html">Tours</a>
+                <a class="mx-2 hover:text-blue-200" href="blog.html">Blog</a>
+                <a class="mx-2 hover:text-blue-200" href="about.html">About Us</a>
+                <a class="mx-2 hover:text-blue-200" href="contact.html">Contact Us</a>
+                <a class="mx-2 hover:text-blue-200" href="car-rentals.html">Car Rentals</a>
+                <a class="mx-2 hover:text-blue-200" href="hotel-booking.html">Hotel Booking</a>
+                <a class="mx-2 hover:text-blue-200" href="train-flight-booking.html">Train & Flight Booking</a>
+                <a class="mx-2 hover:text-blue-200" href="login.html">Login</a>
+            </div>
+            <button class="md:hidden">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- About Us Content -->
+    <div class="container mx-auto mt-16 px-4">
+        <h1 class="text-3xl font-bold mb-8 text-center">About Us</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4">Our Story</h2>
+                <p class="mb-4">Founded in 2010, our tourism company has been dedicated to providing unforgettable travel experiences to adventurers from all around the world. We believe that travel has the power to transform lives, broaden perspectives, and create lasting memories.</p>
+                <p>Our team of experienced travel experts works tirelessly to curate unique and exciting tours, ensuring that every journey with us is filled with discovery, cultural immersion, and pure enjoyment.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4">Our Mission</h2>
+                <p class="mb-4">At Tourism Website, our mission is to inspire and enable people to explore the world, fostering cultural understanding and environmental awareness through responsible travel practices.</p>
+                <p>We are committed to:</p>
+                <ul class="list-disc list-inside mt-2">
+                    <li>Providing exceptional customer service</li>
+                    <li>Offering diverse and authentic travel experiences</li>
+                    <li>Promoting sustainable tourism practices</li>
+                    <li>Supporting local communities in our destinations</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-12">
+            <h2 class="text-2xl font-bold mb-8 text-center">Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <img src="/placeholder.svg?height=150&width=150" alt="John Doe" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">John Doe</h3>
+                    <p class="text-gray-600">Founder & CEO</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <img src="/placeholder.svg?height=150&width=150" alt="Jane Smith" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Jane Smith</h3>
+                    <p class="text-gray-600">Head of Operations</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <img src="/placeholder.svg?height=150&width=150" alt="Mike Johnson" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Mike Johnson</h3>
+                    <p class="text-gray-600">Lead Travel Expert</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-8 mt-16">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">About Us</h3>
+                <p>We are passionate about helping you explore the world and create unforgettable memories.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul>
+                    <li><a href="tours.html" class="hover:underline">Tours</a></li>
+                    <li><a href="blog.html" class="hover:underline">Blog</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+                    <li><a href="login.html" class="hover:underline">Login</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-2xl hover:text-blue-200"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-200"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-200"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p>© 2023 Tourism Website. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

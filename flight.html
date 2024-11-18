@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Train and Flight Booking - Tourism Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="font-roboto bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-2xl font-bold" href="home.html">Tourism</a>
+            <div class="hidden md:flex">
+                <a class="mx-2 hover:text-blue-200" href="tour.html">Tours</a>
+                <a class="mx-2 hover:text-blue-200" href="blog.html">Blog</a>
+                <a class="mx-2 hover:text-blue-200" href="about.html">About Us</a>
+                <a class="mx-2 hover:text-blue-200" href="contact.html">Contact Us</a>
+                <a class="mx-2 hover:text-blue-200" href="car.html">Car Rentals</a>
+                <a class="mx-2 hover:text-blue-200" href="booking.html">Hotel Booking</a>
+                <a class="mx-2 hover:text-blue-200" href="flight.html">Train & Flight Booking</a>
+                <a class="mx-2 hover:text-blue-200" href="login.html">Login</a>
+            </div>
+            <button class="md:hidden">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Train and Flight Booking Content -->
+    <div class="container mx-auto mt-16 px-4">
+        <h1 class="text-3xl font-bold mb-8 text-center">Train and Flight Booking</h1>
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <div class="flex mb-4">
+                <button id="trainTab" class="bg-blue-600 text-white py-2 px-4 rounded-l-lg">Train</button>
+                <button id="flightTab" class="bg-gray-200 text-gray-700 py-2 px-4 rounded-r-lg">Flight</button>
+            </div>
+            <form id="trainForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="train-from" class="block text-gray-700 font-bold mb-2">From</label>
+                    <input type="text" id="train-from" name="train-from" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                </div>
+                <div>
+                    <label for="train-to" class="block text-gray-700 font-bold mb-2">To</label>
+                    <input type="text" id="train-to" name="train-to" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                </div>
+                <div>
+                    <label for="train-date" class="block text-gray-700 font-bold mb-2">Date</label>
+                    <input type="date" id="train-date" name="train-date" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                </div>
+                <div>
+                    <label for="train-passengers" class="block text-gray-700 font-bold mb-2">Passengers</label>
+                    <input type="number" id="train-passengers" name="train-passengers" min="1" max="10" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                </div>
+                <div class="md:col-span-2">
+                    <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Search Trains
+                    </button>
+                </div>
+            </form>
+            <form id="flightForm" class="hidden grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="flight-from" class="block text-gray-700 font-bold mb-2">From</label>
+                    <input type="text" id="flight-from" name="flight-from" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                </div>
+                <div>
+                    <label for="flight-to" class="block text-gray-700 font-bold mb-2">To</label>
+                    <input type="text" id="flight-to" name="flight-to" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                </div>
+                <div>
+                    <label for="flight-date" class="block text-gray-700 font-bold mb-2">Date</label>
+                    <input type="date" id="flight-date" name="flight-date" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                </div>
+                <div>
+                    <label for="flight-passengers" class="block text-gray-700 font-bold mb-2">Passengers</label>
+                    <input type="number" id="flight-passengers" name="flight-passengers" min="1" max="10" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+                </div>
+                <div class="md:col-span-2">
+                    <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Search Flights
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div id="searchResults" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Search results will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-8 mt-16">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">About Us</h3>
